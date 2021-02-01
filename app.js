@@ -22,10 +22,11 @@ Vue.createApp({
 
       if(type === 'need') {
         const completeMask = this.needDoList.splice(index, 1);
-        this.completeList.push(completeMask);
-      } else {
+        this.completeList.push(...completeMask);
+      }
+      else {
         const noCompleteMask = this.completeList.splice(index, 1);
-        this.needDoList.push(noCompleteMask);
+        this.needDoList.push(...noCompleteMask);
       }
     },
     removeMask (index, type) {
