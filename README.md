@@ -2,4 +2,4 @@
 
 **Demo:  [https://annblok.github.io/Vue-3-ToDo-List](https://annblok.github.io/Vue-3-ToDo-List/)**
 ____
-![Alt-demo](https://i.imgur.com/A1HnwBn.png "View Demo" =700x390)
+![Alt-demo](https://i.imgur.com/A1HnwBn.png "View Demo")
