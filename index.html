@@ -19,11 +19,11 @@
         <div class="form">
           <input
             type="text"
-            v-bind:value="valueInput"
-            v-on:input="handleInput"
-            v-on:keypress.enter="addTask"
+            :value="valueInput"
+            @input="handleInput"
+            @keypress.enter="addTask"
             >
-          <button class="btn" v-on:click="addTask">Add a new task</button>
+          <button class="btn" @click="addTask">Add a new task</button>
         </div>
       </div>
     </div>
@@ -38,10 +38,10 @@
           :key="mask.id"
         >
           <div>
-            <input type="checkbox" v-on:change="doCheck(index, 'need')"/>
+            <input type="checkbox" @change="doCheck(index, 'need')"/>
             <span>{{ mask.title }}</span>
           </div>
-          <button class="btn-remove" v-on:click="removeMask(index, 'need')">Remove</button>
+          <button class="btn-remove" @click="removeMask(index, 'need')">Remove</button>
         </li>
       </ul>
       <h2>
@@ -54,10 +54,10 @@
           :key="mask.id"
         >
           <div>
-            <input type="checkbox" v-on:change="doCheck(index, 'complete')"  checked>
+            <input type="checkbox" @change="doCheck(index, 'complete')"  checked>
             <span>{{ mask.title }}</span>
           </div>
-          <button class="btn-remove" v-on:click="removeMask(index, 'complete')">Remove</button>
+          <button class="btn-remove" @click="removeMask(index, 'complete')">Remove</button>
         </li>
       </ul>
     </div>
